@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PlumbBoldCRegular';
+    src: url("../font/plumbbo00-webfont.eot");
+    src: url("../font/plumbbo00-webfont.eot?#iefix") format("embedded-opentype"), url("../font/plumbbo00-webfont.woff") format("woff"), url("../font/plumbbo00-webfont.ttf") format("truetype"), url("../font/plumbbo00-webfont.svg#PlumbBoldCRegular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'PlumbMediumCRegular';
+    src: url("../font/plumbme00-webfont.eot");
+    src: url("../font/plumbme00-webfont.eot?#iefix") format("embedded-opentype"), url("../font/plumbme00-webfont.woff") format("woff"), url("../font/plumbme00-webfont.ttf") format("truetype"), url("../font/plumbme00-webfont.svg#PlumbMediumCRegular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'PlumbLightCRegular';
+    src: url("../font/plumbli0_0-webfont.eot");
+    src: url("../font/plumbli0_0-webfont.eot?#iefix") format("embedded-opentype"), url("../font/plumbli0_0-webfont.woff") format("woff"), url("../font/plumbli0_0-webfont.ttf") format("truetype"), url("../font/plumbli0_0-webfont.svg#PlumbLightCRegular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'PlumbBoldCRegular';
+    src: url("../font/plumbbo00-webfont.eot");
+    src: url("../font/plumbbo00-webfont.eot?#iefix") format("embedded-opentype"), url("../font/plumbbo00-webfont.ttf") format("truetype"), url("../font/plumbbo00-webfont.svg#PlumbBoldCRegular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'PragmaticaC';
+    src: url("../font/pragmaticac.eot");
+    src: url("../font/pragmaticac.eot?#iefix") format("embedded-opentype"), url("../font/pragmaticac.woff") format("woff"), url("../font/pragmaticac.ttf") format("truetype"), url("../font/pragmaticac.svg#pragmaticac") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+.black {
+    color: #000000;
+}
+.darkgrey {
+    color: #333333;
+}
+.grey {
+    color: #666666;
+}
+.lightgrey {
+    color: #999999;
+}
+.deepred {
+    color: #993300;
+}
+.b-social {
+    background: url(../i/social_bg.jpg) repeat top left;
+}
+.b-social_wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+
+.b-social_header{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font: normal 40px/40px "PlumbLightCRegular";
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 72px 0 29px;
+    margin: 0 113px;
+    border-bottom: 1px solid #dbdbdb;
+    letter-spacing: 0.5px;
+}
+.b-social_text{
+    display: block;
+    text-align: center;
+    margin: 0 120px;
+    padding: 21px 0;
+    font: normal 19px/20px "PlumbMediumCRegular";
+    letter-spacing: 0.5px;
+
+}
+.b-social_container {
+    display: block;
+    margin: 30px 47px;
+    overflow: hidden;
+}
+.b-social_container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.b-social_article {
+    display: block;
+    margin: 0 2px 4px;
+    width: 269px;
+    height: 360px;
+    background: #fff;
+    float: left;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    padding: 13px 13px 0 16px;
+}
+.b-social_article_link {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    text-align: center;
+}
+.b-social_article_image {
+    display: block;
+    width: 269px;
+    height: 269px;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url('grayscale.svg#greyscale');
+    filter: gray;
+    -webkit-transition: -webkit-filter 1s;
+    -webkit-backface-visibility: hidden;
+}
+
+
+.b-social_article_image:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%)
+}
+
+.b-social_article_date {
+    display: block;
+    font: normal 12px/28px "PlumbLightCRegular";
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+.b-social_article_title {
+    display: block;
+    margin: 10px 45px;
+    font: normal 14px/14px "PlumbMediumCRegular";
+    text-transform: uppercase;
+}
+
+
+.b-slider {
+    min-height: 100%;
+    background: url(../i/page2_bg.png) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.b-slider_article {
+    width: 445px;
+    height: 415px;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+    padding: 40px 50px 40px 49px;
+}
+
+.b-slider_arrow {
+    display: block;
+    position: absolute;
+    top: 500px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    font: normal 112px/90px "PlumbLightCRegular";
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.b-slider_arrow_prev {
+    left: 30px;
+}
+.b-slider_arrow_next {
+    right: 30px;
+}
+.b-slider_article_date {
+    display: block;
+    font: normal 18px/18px "PlumbLightCRegular";
+    margin: 0;
+    text-align: left;
+    padding: 0 0 0 5px;
+}
+.b-slider_article_title {
+    display: block;
+    font: normal 30px/48px "PlumbLightCRegular";
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0 0 0 5px;
+}
+
+.b-slider_article_summary {
+    display: block;
+    font: normal 25px/26px "PlumbLightCRegular";
+    text-align: left;
+    text-transform: uppercase;
+    margin: 11px 0 0 0;
+}
+
+.b-slider_article_text {
+    display: block;
+    font: normal 20px/20px "PlumbLightCRegular";
+    text-align: left;
+    margin: 24px 70px 10px 0;
+
+}
+
+.b-slider_article_link {
+    font: normal 18px "PlumbLightCRegular";
+}
+.b-slider_article_close {
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 27px;
+    right: 20px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAkUlEQVQYV42QiQnDIBiFvZaoa3SNzJEhBPECh+gcXcM17A6CWl/B0CSFRhD59XsHUnJx0Ysc+YBa6ztjbG2tPUII6TiD2cABLMYYCRgi51wegieEO5BSuowtcXmENnDGw3V2/nY7OXrvCeJ77xmP4zxHw81am0opSQixQvSzIxxqrTnG+FJK3Tjncs67jv/+8w3PfmAL4z8jKwAAAABJRU5ErkJggg==) no-repeat 0 0;
+}
+.b-documents {
+    background: url(../i/social_bg.jpg) repeat 0 0 ;
+}
+.b-documents_wrapper {
+    width: 860px;
+    margin: 0 auto;
+    padding: 0 70px 0;
+}
+.b-documents_wrapper:first-child {
+
+}
+.b-documents_docs {
+    padding: 0 0 45px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.b-files_wrapper {
+    overflow: hidden;
+}
+.b-files_wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.b-documents_header {
+    display: block;
+    font: normal 28px/34px "PlumbBoldCRegular";
+    margin: 0;
+    padding: 85px 0 54px 0;
+}
+
+.b-file {
+    display: block;
+    width: 135px;
+    height: 300px;
+    float: left;
+    margin: 0 41px 0 0;
+    font: normal 14px "PlumbLightCRegular";
+}
+.b-file:last-child {
+    margin: 0 !important;
+}
+
+.b-file_icon {
+    display: block;
+    position: relative;
+    width: 119px;
+    height: 149px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+.b-file_icon-corner {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 0 0 0 10px;
+    background: #ffffff;
+}
+.b-file_icon-corner:before {
+    content: "";
+    display: block;
+    height: 49px;
+    position: absolute;
+    width: 64px;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476);
+    top: -20px;
+    right: -27px;
+    background: url("../i/social_bg.jpg") no-repeat 0 0;
+}
+.b-file_icon-corner:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 6px;
+    top: 44px;
+    border: 19px solid;
+    border-color: rgba(0,0,0,0.3) rgba(0,0,0,0.3) transparent transparent;
+
+}
+.b-file_icon:after {
+    display: block;
+
+    position: absolute;
+    font: normal 40px 'PlumbMediumCRegular';
+    top: 86px;
+    left: 20px;
+}
+.b-file_pdf .b-file_icon {
+    background: #ad3f0b;
+}
+.b-file_pdf .b-file_icon:after {
+    content: ".pdf";
+}
+.b-file_xls .b-file_icon {
+    background: #9d9d9c;
+}
+.b-file_xls .b-file_icon:after {
+    content: ".xls";
+}
+.b-file_doc .b-file_icon {
+    background: #6d6d6c;
+}
+.b-file_doc .b-file_icon:after {
+    content: ".doc";
+}
+.b-file_size {
+    position: relative;
+    font-weight: bold;
+    padding: 0 4px;
+}
+.b-file_title {
+    min-height: 66px;
+    padding: 0 4px;
+    margin: 10px 0 14;
+    line-height: 15px;
+}
+.b-documents_cases .b-file_title {
+    min-height: 33px;
+}
+.b-documents_cases .b-file_icon-corner {
+    background: #993300;
+}
+.b-documents_cases .b-file_icon {
+    color: #993300;
+}
+.b-documents_cases .b-file_icon {
+    background: none !important;
+}
+.b-file_icon .b-file_icon-image {
+    display: block;
+    overflow: hidden;
+    border-radius: 13px;
+}
+.b-file_download {
+    position: absolute;
+    top: 3px;
+    right: 35px;
+    width: 40px;
+    height: 35px;
+    background: url(../i/download_ico.png) no-repeat 0 0;
+
+}
+
+
